@@ -1,16 +1,18 @@
-// ================== MODAL FUNCTIONS ==================
+// Show Register form
 function showRegister() {
   document.getElementById("authModal").style.display = "flex";
   document.getElementById("registerForm").style.display = "block";
   document.getElementById("loginForm").style.display = "none";
 }
 
+// Show Login form
 function showLogin() {
   document.getElementById("authModal").style.display = "flex";
   document.getElementById("registerForm").style.display = "none";
   document.getElementById("loginForm").style.display = "block";
 }
 
+// Close modal
 function closeModal() {
   document.getElementById("authModal").style.display = "none";
 }
@@ -28,6 +30,7 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
   const email = emailInput.value;
   const password = passwordInput.value;
 
+  // Disable form while fetching
   form.classList.add("opacity-50", "pointer-events-none");
 
   try {
@@ -38,18 +41,21 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
     });
 
     const data = await res.json();
-    alert(data.message);
+    alert(data.message);  // Popup message
 
     if (data.success) {
+      // Clear input fields after successful registration
       usernameInput.value = "";
       emailInput.value = "";
       passwordInput.value = "";
+
       closeModal();
-      showLogin();
+      showLogin(); // After register, ask user to login
     }
   } catch (err) {
     alert("Error: " + err.message);
   } finally {
+    // Re-enable form
     form.classList.remove("opacity-50", "pointer-events-none");
   }
 });
@@ -96,17 +102,16 @@ document.getElementById("chefForm").addEventListener("submit", async (e) => {
     });
 
     const data = await res.json();
-    alert(data.message);
-
+    alert(data.message); // Popup confirmation
     if (data.success) {
-      document.getElementById("chefForm").reset();
+      document.getElementById("chefForm").reset(); // clear form
     }
   } catch (err) {
     alert("Error: " + err.message);
   }
 });
 
-// ================== FOOD FACTS BUTTON ==================
+// Food Facts button click
 document.addEventListener("DOMContentLoaded", () => {
   const factsBtn = document.getElementById("factsBtn");
   const factsContainer = document.getElementById("factsContainer");
@@ -117,10 +122,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const res = await fetch("https://pleasant-enchantment.onrender.com/food-facts");
         const data = await res.json();
 
-        if (data.success && data.data && data.data.length > 0) {
-          // Pick a random fact
-          const randomFact = data.data[Math.floor(Math.random() * data.data.length)];
-          factsContainer.textContent = randomFact.fact_text;
+        if (data.success && data.data && data.data.fact_text) {
+          factsContainer.textContent = data.data.fact_text; // show the random fact
         } else {
           factsContainer.textContent = "No facts available.";
         }
