@@ -1,41 +1,32 @@
 
-* Register & Login securely (with hashed passwords)
-* Submit their own recipes
-* View random food facts
+🍴 Foodera App
 
-The app is built with **HTML, CSS, JavaScript (frontend)**, **Node.js + Express (backend)**, and **MySQL (database)**.
-Frontend is hosted on **GitHub Pages**, and backend is deployed on **Render** with a MySQL database hosted on **Railway**.
+Foodera is a full-stack web application where users can register, log in, ask food-related questions to the chef, and view interesting food facts. It is built with Node.js, Express, MySQL, and Vanilla JavaScript, and deployed on Render (backend) and GitHub Pages / Render Static Site (frontend).
 
----
+🚀 Features
 
-## ⚙️ Tech Stack
+🔑 User Authentication – Register & Login with MySQL database.
 
-* **Frontend:** HTML, CSS, JavaScript (vanilla JS, `script.js`)
-* **Backend:** Node.js, Express.js
-* **Database:** MySQL (hosted on Railway)
-* **Deployment:**
+👨‍🍳 Ask the Chef – Send queries to backend and get responses.
 
-  * Frontend → GitHub Pages
-  * Backend → Render
+🥗 Food Facts – Fetch and display fun food facts from the server.
 
----
+🌐 Deployed Online – Accessible through Render & GitHub Pages.
 
-## 🚀 Features
+🛠️ Tech Stack
 
-* **User Authentication:**
+Frontend: HTML, CSS, JavaScript
 
-  * Register with username, email, and password
-  * Login with password verification (bcrypt hashing)
+Backend: Node.js + Express
 
-* **Chef Recipes:**
+Database: MySQL (for storing user credentials)
 
-  * Users can submit recipes with name and details
-  * Stored in the MySQL `recipes` table
+Deployment:
 
-* **Food Facts:**
+Backend → Render (Web Service)
 
-  * Random fact is fetched from `food_facts` table
-  * Shown dynamically on the frontend
+Frontend → GitHub Pages / Render Static Hosting
+
 
 
 ✅ Final Result: A **working full-stack food app** where users can register, login, add recipes, and explore food facts!
