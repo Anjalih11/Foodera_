@@ -42,9 +42,8 @@ Frontend → GitHub Pages / Render Static Hosting
 <img width="1440" height="900" alt="Screenshot 2025-09-17 at 4 28 56 PM" src="https://github.com/user-attachments/assets/4e8a3992-ab69-426a-bbea-ce30ea8cdf52" />
 
 
+<img width="1440" height="900" alt="Screenshot 2025-09-17 at 4 30 01 PM" src="https://github.com/user-attachments/assets/5ed05d3c-7934-4394-a0ba-cefe202da5b7" />
 
 
-<img width="1440" height="900" alt="Screenshot 2025-09-17 at 4 30 01 PM" src="https://github.com/user-attachments/assets/24c2aec8-48bf-43aa-84b4-71aa9d1![Uploading Screenshot 2025-09-17 at 4.28.52 PM.png…]()
-bc64f" />
 
 
