@@ -1,4 +1,4 @@
-# 🍴 Foodera App
+<img width="1440" height="900" alt="Screenshot 2025-09-17 at 4 28 39 PM" src="https://github.com/user-attachments/assets/a4db95d1-b826-4f48-a8e0-41ca4d251039" /># 🍴 Foodera App
 
 Foodera is a **full-stack web application** where users can:
 
@@ -42,4 +42,7 @@ Frontend is hosted on **GitHub Pages**, and backend is deployed on **Render** wi
 
 
 ✅ Final Result: A **working full-stack food app** where users can register, login, add recipes, and explore food facts!
+<img width="1440" height="900" alt="Screenshot 2025-09-17 at 4 26 39 PM" src="https://github.com/user-attachments/assets/8fadc4f6-3689-4471-8afc-7a3778c4ec3a" />
+
+
 
